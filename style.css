@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    background-image: url(images/background\ pics.jpg);
+    background-size: cover;
+  }
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 370px;
+    width: 100%;
+    background: rgba(255, 192, 236, 0.986);
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+    position: relative;
+  }
+  .profile-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color: #f10ead;
+  }
+  
+  
+  .image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    padding: 3px;
+  }
+  .image .profile-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+  .profile-card .text-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+  }
+  .text-data .name {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .text-data .job {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .profile-card .media-button {
+    display: flex;
+    align-items: center;
+  }
+  .media-button .link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50px;
+    margin: 0 8px;
+    text-decoration: none;
+  }
+  .profile-card .button {
+    display: flex;
+    align-items: center;
+  }
+  
+  .call-to-action {
+    display: flex;
+  }
+  
+  .button {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-radius: 24px;
+    margin: 0 10px;
+    padding: 8px 24px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0 3s ease;
+  }
+  .button:hover {
+    background-color: #0e4bf1;
+  }
+  .analytics {
+    display: flex;
+  }
+  .data{
+    padding: 0 20px;
+    align-items: center;
+    color: #333;
+    border-right: 2px solid #e7e7e7;
+  
+  }
+  .data i {
+    font-size: 18px;
+    margin-right: 6px;
+  
+  }
+  
+  }
+  .data:last-child{
+    border-right: none;
+  }
+  
